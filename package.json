@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Tonalli Rodriguez",
   "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
     "gatsby": "^3.0.1",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-image": "^1.0.0",
