@@ -1,12 +1,11 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import "./header.css"
 
 import logo from "../../images/mi-despertar-logo.png"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <nav className="navbar navbar-expand-md navbar-light bg-white fixed-top">
       <div className="container">
@@ -56,13 +55,5 @@ const Header = ({ siteTitle }) => (
     </nav>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

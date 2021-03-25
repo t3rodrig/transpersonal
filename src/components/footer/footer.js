@@ -1,7 +1,8 @@
 import * as React from "react"
+import PropTypes from "prop-types"
 import "./footer.css"
 
-const Footer = () => (
+const Footer = ({ siteTitle, siteAuthor }) => (
   <footer className="pt-5 pb-2 mt-auto">
     <div className="container text-white">
       <div className="row">
@@ -51,13 +52,23 @@ const Footer = () => (
       <div className="row">
         <div className="col-12">
           <p className="text-center">
-            © {new Date().getFullYear()} por Mi Despertar. Desarrollado por{" "}
-            @t3rodrig
+            © {new Date().getFullYear()} por {siteTitle}. Desarrollado por{" "}
+            {siteAuthor}.
           </p>
         </div>
       </div>
     </div>
   </footer>
 )
+
+Footer.propTypes = {
+  siteTitle: PropTypes.string,
+  siteAuthor: PropTypes.string,
+}
+
+Footer.defaultProps = {
+  siteTitle: ``,
+  siteAuthor: ``,
+}
 
 export default Footer

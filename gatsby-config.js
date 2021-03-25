@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Transpersonal`,
+    title: `Mi Despertar`,
     description: `Psicoterapeuta transpersonal, psiquiatra y tanatóloga. Ofrece diagnósticos y tratamientos`,
     author: `@t3rodrig`,
   },
