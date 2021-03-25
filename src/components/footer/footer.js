@@ -40,7 +40,7 @@ const Footer = () => (
               <a
                 href="mailto:lu6014@yahoo.com.mx"
                 aria-label="Enlace a correo electrónico "
-                class="link-light text-decoration-none"
+                className="link-light text-decoration-none"
               >
                 <i className="bi bi-envelope"></i> lu6014@yahoo.com.mx
               </a>
