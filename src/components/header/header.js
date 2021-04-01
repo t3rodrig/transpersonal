@@ -30,22 +30,34 @@ const Header = () => (
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" activeClassName="active">
                 Inicio
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link
+                className="nav-link"
+                to="/servicios"
+                activeClassName="active"
+              >
                 Servicios
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link
+                className="nav-link"
+                to="/nosotros"
+                activeClassName="active"
+              >
                 Quiénes somos
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contacto">
+              <Link
+                className="nav-link"
+                to="/contacto"
+                activeClassName="active"
+              >
                 Contacto
               </Link>
             </li>
