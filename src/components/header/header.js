@@ -3,18 +3,14 @@ import { Link } from "gatsby"
 
 import "./header.css"
 
-import logo from "../../images/mi-despertar-logo.png"
+import logo from "../../images/logo.svg"
 
 const Header = () => (
   <header>
     <nav className="navbar navbar-expand-md navbar-light bg-white fixed-top">
       <div className="container">
         <Link to="/" className="navbar-brand">
-          <img
-            src={logo}
-            alt="Logo Mi Despertar"
-            style={{ maxWidth: "100%", maxHeight: "100%" }}
-          />
+          <img src={logo} alt="Logo Mi Despertar" style={{ width: "280px" }} />
         </Link>
         <button
           className="navbar-toggler"
