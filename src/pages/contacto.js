@@ -14,13 +14,20 @@ const ContactPage = () => (
         </div>
         <div className="row mt-4">
           <div className="col-md-10 mx-auto">
-            <form className="needs-validation" novalidate>
+            <form
+              action="https://formspree.io/f/xqkwkovb"
+              method="POST"
+              name="agendar-cita"
+              className="needs-validation"
+              novalidate
+            >
               <div className="row g-3">
                 <div className="col-sm-6">
                   <label htmlFor="firstName" className="form-label">
                     Nombre(s)
                   </label>
                   <input
+                    name="nombres"
                     type="text"
                     className="form-control"
                     id="firstName"
@@ -35,6 +42,7 @@ const ContactPage = () => (
                     Apellido(s)
                   </label>
                   <input
+                    name="apellidos"
                     type="text"
                     className="form-control"
                     id="lastName"
@@ -49,6 +57,7 @@ const ContactPage = () => (
                     Teléfono Celular
                   </label>
                   <input
+                    name="telefono"
                     type="tel"
                     className="form-control"
                     id="phone"
@@ -64,6 +73,7 @@ const ContactPage = () => (
                     Email <span className="text-muted">(Opcional)</span>
                   </label>
                   <input
+                    name="email"
                     type="email"
                     className="form-control"
                     id="email"
@@ -80,6 +90,7 @@ const ContactPage = () => (
                     <span className="text-muted">(Opcional)</span>
                   </label>
                   <textarea
+                    name="mensaje"
                     className="form-control"
                     id="comments"
                     placeholder="Mensaje"
@@ -91,6 +102,7 @@ const ContactPage = () => (
                     Primera opción de fecha
                   </label>
                   <input
+                    name="fecha-cita"
                     type="date"
                     className="form-control"
                     id="date-first"
@@ -105,6 +117,7 @@ const ContactPage = () => (
                     Segunda opción de fecha
                   </label>
                   <input
+                    name="fecha-cita"
                     type="date"
                     className="form-control"
                     id="date-second"
