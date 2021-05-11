@@ -8,69 +8,46 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicio" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt eos
-      accusamus repellendus, qui atque blanditiis numquam officiis est ducimus
-      laborum fugit cum facilis quae. Harum adipisci incidunt recusandae culpa.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt eos
-      accusamus repellendus, qui atque blanditiis numquam officiis est ducimus
-      laborum fugit cum facilis quae. Harum adipisci incidunt recusandae culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quibusdam
-      consequatur ex voluptates facilis quasi tempora accusantium a qui animi.
-      Accusantium ratione ullam a sint enim ipsam quae dolorem quis! Magnam
-      eaque natus impedit aliquam, maxime recusandae, aliquid omnis tenetur a ad
-      distinctio aspernatur vitae, inventore laborum. Aliquam mollitia fugiat
-      maiores dolore eaque. Delectus atque iste quam sunt, harum pariatur?
-      Corporis ad enim error debitis doloremque quo exercitationem beatae ipsum,
-      vel sunt cum qui perspiciatis magnam consequuntur et laudantium itaque!
-      Distinctio alias, consequatur commodi totam aperiam hic dolor eligendi
-      cupiditate. Porro commodi nulla nobis debitis excepturi consequuntur
-      velit. Eum mollitia obcaecati expedita ab beatae molestiae aspernatur,
-      odit, accusantium commodi, ratione harum excepturi? Vel temporibus qui
-      necessitatibus fuga impedit, adipisci voluptate. Laudantium tenetur
-      blanditiis dolor corporis et, natus praesentium aut iusto eligendi
-      necessitatibus quos nostrum quia excepturi iure voluptas asperiores minus
-      magnam, impedit incidunt reiciendis magni ullam? Repudiandae adipisci
-      officia tempora?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt eos
-      accusamus repellendus, qui atque blanditiis numquam officiis est ducimus
-      laborum fugit cum facilis quae. Harum adipisci incidunt recusandae culpa.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, blanditiis
-      illum. Tenetur, expedita repellat? Minus dolores dignissimos, sequi
-      suscipit eius sint dolore provident quam reprehenderit dolorem molestiae
-      asperiores, voluptatem adipisci? Nam, laudantium. Similique modi quos
-      laudantium repudiandae cupiditate nostrum eos vero tempore! Repellendus
-      velit vel tempora fuga, reprehenderit consequatur, ab nisi incidunt
-      molestiae, mollitia consequuntur ducimus minus ullam. Quibusdam, dicta! Ut
-      voluptate quod quis quia dicta fuga, nesciunt aperiam non nemo?
-      Consequuntur explicabo expedita maiores odit quasi recusandae aspernatur?
-      Sequi consectetur nam optio earum culpa repellat aut sit quae quaerat!
-      Voluptatum deleniti eum accusamus sit, odit alias vitae! Ad recusandae,
-      labore dolore tempore corrupti quis fugit repellendus beatae vel possimus
-      sunt sequi, est quidem quibusdam id inventore aperiam nostrum odio. Velit
-      provident minus dignissimos impedit sequi alias, earum facere commodi
-      tenetur doloribus odit, quas cumque expedita veniam, iure fugit cum
-      quibusdam quod ipsum rerum nemo! Accusamus fugiat dignissimos odit
-      voluptatibus.
-    </p>
+    <section>
+      <div className="container col-xxl-8 px-4 py-5">
+        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div className="col-10 col-sm-8 col-lg-6">
+            <StaticImage
+              src="../images/410.jpg"
+              className="d-block mx-lg-auto img-fluid border rounded-3 shadow-lg"
+              alt=""
+              loading="lazy"
+              width={700}
+              height={500}
+              formats={["AUTO", "WEBP", "AVIF"]}
+            />
+          </div>
+          <div className="col-lg-6">
+            <h1 className="display-5 fw-bold lh-1 mb-3">
+              Mi despertar al encontrarme a mí misma(o)
+            </h1>
+            <p className="lead">
+              ¿Necesitas psicoterapia? Acudir a un{" "}
+              <strong>psicoterapeuta transpersonal</strong> te ayudará a sanar
+              tus heridas emocionales y a conocerte mejor, con la finalidad de
+              lograr estar sereno y saber afrontar situaciones de crisis con una
+              actitud objetiva y consiente. Recuerda que asistir con un
+              profesional puede evitar <strong>enfermedades crónicas</strong> en
+              el futuro.
+            </p>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <Link
+                to="/contacto"
+                role="button"
+                className="btn btn-outline-secondary btn-lg px-4"
+              >
+                Agenda tu cita
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 

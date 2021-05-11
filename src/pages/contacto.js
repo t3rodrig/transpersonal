@@ -9,7 +9,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contacto" />
     <section id="contacto" className="bg-light">
-      <div className="container">
+      <div className="container px-4 py-5">
         <div className="text-center">
           <h1 className="display-4">Agenda tu cita</h1>
           <p>Deja tus datos y nosotros nos ponemos en contacto</p>
